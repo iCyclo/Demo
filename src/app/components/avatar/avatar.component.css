@@ -1,0 +1,21 @@
+.avatar{
+  align-items: center;
+}
+
+.avatar-img{
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 1px solid #333333;
+}
+
+.avatar-txt{
+  font-size: 1.2rem;
+  display: none;
+}
+
+@media (min-width: 1150px){
+  .avatar-txt{
+    display: initial;
+  }
+}

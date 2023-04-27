@@ -1,0 +1,21 @@
+<header class="header cont">
+  <div class="flex logo-menu">
+    <a href="#" class="header-logo">F L O W B I R D</a>
+    <app-menu-bar></app-menu-bar>
+  </div>
+
+  <p-dropdown
+    class="select"
+    [options]="options"
+    [(ngModel)]="selectedOption"
+    optionLabel="name">
+  </p-dropdown>
+
+  <div class="flex avatar-icon">
+    <p-divider layout="vertical"></p-divider>
+    <i class="icon fa-solid fa-grid"></i>
+    <p-divider layout="vertical"></p-divider>
+    <app-avatar></app-avatar>
+  </div>
+
+</header>

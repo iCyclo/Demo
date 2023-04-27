@@ -1,0 +1,31 @@
+.filter-controls, .buttons{
+  gap: 1rem;
+
+  width: 100%;
+}
+
+.filter-controls{
+  justify-content: flex-start;
+}
+
+.buttons{
+  justify-content: space-between;
+}
+
+.fields{
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+@media (min-width: 560px){
+  .fields{
+    flex-direction: row;
+  }
+  .filter-controls, .buttons{
+    width: fit-content;
+  }
+}
+
+:host ::ng-deep .p-component, .p-component * {
+  font-size: 1.2rem;
+}

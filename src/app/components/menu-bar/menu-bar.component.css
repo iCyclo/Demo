@@ -1,0 +1,47 @@
+.i-wrap{
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+:host ::ng-deep .icon {
+  font-size: 2rem;
+  color: black !important;
+}
+
+:host ::ng-deep .p-menuitem-text {
+  font-size: 2rem;
+  color: black !important;
+  text-transform: capitalize;
+}
+
+:host ::ng-deep .p-submenu-list {
+  width: fit-content;
+  background-color: #eff3f8;
+}
+
+:host ::ng-deep .p-menubar {
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+}
+
+:host ::ng-deep .p-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (min-width: 960px){
+  :host ::ng-deep .icon{
+    font-size: 1.4rem;
+  }
+  :host ::ng-deep .p-menuitem-text{
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 960px){
+  :host ::ng-deep .p-menubar.p-menubar-mobile-active .p-menubar-root-list {
+    width: fit-content;
+  }
+}

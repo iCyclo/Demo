@@ -1,0 +1,72 @@
+.header{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  row-gap: 1rem;
+}
+
+.header-logo{
+  font-weight: bold;
+  font-size: 2.3rem;
+  width: 17rem;
+
+}
+
+.logo-menu{
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+
+/* DROPDOWN */
+:host ::ng-deep .p-dropdown .p-dropdown-label, :host ::ng-deep .p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+  font-size: 1.5rem;
+}
+
+:host ::ng-deep .p-dropdown {
+  width: 15rem;
+}
+
+.select{
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  justify-self: center;
+}
+
+/* ICON */
+
+.icon{
+  font-size: 2.5rem;
+}
+
+
+.avatar-icon{
+  justify-content: flex-end;
+}
+
+@media (min-width: 425px){
+  .header-logo{
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 520px){
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px){
+  .header{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 961px){
+  .logo-menu{
+    flex-direction: row;
+  }
+}
